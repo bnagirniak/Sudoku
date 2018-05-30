@@ -1,0 +1,73 @@
+[gd_scene format=2]
+
+[node name="Table" type="Node" index="0"]
+
+[node name="Background" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 450.0
+margin_bottom = 450.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.707031, 0.512321, 0.176758, 1 )
+_sections_unfolded = [ "Margin", "Rect" ]
+
+[node name="TinyVLine" type="Line2D" parent="." index="1"]
+
+points = PoolVector2Array( 0, 50, 450, 50, 450, 100, 0, 100, 0, 200, 450, 200, 450, 250, 0, 250, 0, 350, 450, 350, 450, 400, 0, 400 )
+width = 4.0
+default_color = Color( 0.0799255, 0.129756, 0.378906, 1 )
+texture_mode = -238848512
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="TinyHLine" type="Line2D" parent="." index="2"]
+
+points = PoolVector2Array( 50, 0, 50, 450, 100, 450, 100, 0, 200, 0, 200, 450, 250, 450, 250, 0, 350, 0, 350, 450, 400, 450, 400, 0 )
+width = 4.0
+default_color = Color( 0.0715942, 0.103933, 0.265625, 1 )
+texture_mode = 6619239
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="WideVLine" type="Line2D" parent="." index="3"]
+
+points = PoolVector2Array( 150, 0, 150, 450, 300, 450, 300, 0 )
+width = 8.0
+default_color = Color( 0.106201, 0.164022, 0.453125, 1 )
+texture_mode = 72
+joint_mode = 1
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Border", "Capping", "Pause" ]
+
+[node name="WideHLine" type="Line2D" parent="." index="4"]
+
+points = PoolVector2Array( 0, 150, 450, 150, 450, 300, 0, 300 )
+width = 8.0
+default_color = Color( 0.106201, 0.164022, 0.453125, 1 )
+texture_mode = 72
+joint_mode = 1
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Border", "Capping", "Pause" ]
+
+[node name="Border" type="Line2D" parent="." index="5"]
+
+points = PoolVector2Array( 0, 0, 450, 0, 450, 450, 0, 450, 0, 0 )
+width = 8.0
+default_color = Color( 0.140076, 0.197062, 0.332031, 1 )
+joint_mode = 1
+begin_cap_mode = 2
+end_cap_mode = 2
+sharp_limit = 2.0
+round_precision = 8
+
+
